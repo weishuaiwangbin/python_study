@@ -1,31 +1,32 @@
 环境：
-    python3.6
-    pycharm
+   - python3.6
+   - pycharm
+    
     https://www.cnblogs.com/jokerbj/p/7460260.html
     https://www.dabeaz.com/python/UnderstandingGIL.pdf
 
 
 # 多线程 vs 多进程
-程序：一堆代码以文本形式存入一个问答
-进程：程序运行的一个状态
+- 程序：一堆代码以文本形式存入一个问答
+- 进程：程序运行的一个状态
     - 包含地址空间，内存，数据栈等
     - 每个进程由自己完全独立的运行环境，多进程共享数据是一个问题
-线程：
+- 线程：
     - 一个进程的独立运行片段，一个进程包含多个线程
     - 轻量化的进程
     - 共享互斥问题
     
-全局解释器锁(GIL)
+- 全局解释器锁(GIL)
     - Python代码的执行是由python虚拟机进行控制
     - 在主循环中只能有一个控制线程在执行
     
-Python包
+- Python包
     - thread：不太适用，python3改成_thread
     - threading：通行的包
     - 案例01：多线程，缩短总时间，使用_thread
     - 案例02：多线程，传参数
 
-threading的使用：
+- threading的使用：
     - 直接利用threading.Thread生成Thread实例
         1. t = threading.Thread(target=xxx,args=(xxx,))
         2. t.start():启动多线程
