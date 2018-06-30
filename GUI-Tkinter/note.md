@@ -1,0 +1,34 @@
+- Python GUI编程
+    - Tkinter 初识 案例01
+    - 组件学习  案例02
+    - 组件布局  
+        - pack：按照方位布局  案例03
+            - side：LEFT,TOP,RIGHT,BOTTON
+            - fill：X,Y,BOTH,NONE
+            - expande：YES/NO
+            - anchor：N,E,S,W,CENTER
+            - ipandx：x方向内边距。。ipandy
+            - padx，pady，x，y方向外边距
+        - place：按坐标布局
+            - 相对文字布局
+        - grid：网格布局  案例04
+            - row，column从0开始
+            - sticky：N,E,S,W决定文件从那个方向开始
+    - 消息机制  简单案例05
+        - 自动发出事件/消息
+        - 消息由系统负责发送到队列
+        - 由相关组件进行绑定/设置
+        - 后端自动选择感兴趣的事件并做出相应反应
+    - 消息格式：
+        - <[modifier-] ---type-[-detail]>
+        - <[Button-1]>:Button表示一个按钮事件，1代表鼠标左键，2代表中键
+        - <[KeyPress-A]>键盘A键位
+        - <[Control-Shift-KeyPress-A]>同时按下Control，shift，A三键位
+        - <[F1]>
+    - Tkinter的绑定
+        - bind_all:全局绑定
+        - bind_class：三个参数，类名，事件，操作
+        - bind:单独对某个实例绑定
+        - unbind:解绑
+    - 菜单 menu
+    - 画布 canvas
