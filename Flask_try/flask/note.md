@@ -1,0 +1,8 @@
+- 渲染模板：
+    - 模板放在templates文件夹下
+    - 从flask中导入render_template函数 
+- 传参
+    - 少量参数可以直接在render_template函数中添加关键字参数
+    - 多参数则先放在字典中，使用两个星号（**）将字典转换成关键字传递进去，易于管理
+    - 模板中，使用一个变量，语法："{{params}}"
+    - 访问模型中属性或字典，可以通过{{params.property}}，或是使用{{params['age']}}
